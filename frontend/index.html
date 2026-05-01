@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Text Toolkit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🧠 AI Text Toolkit</h1>
+
+    <textarea id="inputText" placeholder="Paste your text here..."></textarea>
+
+    <div class="buttons">
+        <button onclick="callAPI('summarize')">Summarize</button>
+        <button onclick="callAPI('notes')">Notes</button>
+        <button onclick="callAPI('keywords')">Keywords</button>
+        <button onclick="callAPI('mindmap')">Mindmap</button>
+        <button class="clear" onclick="clearText()">Clear</button>
+    </div>
+
+    <div id="loading" class="loading hidden">⏳ Processing...</div>
+
+    <div class="output">
+        <pre id="outputText">Output will appear here...</pre>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

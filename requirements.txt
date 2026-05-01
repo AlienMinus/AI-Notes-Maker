@@ -1,0 +1,8 @@
+flask
+flask-cors
+waitress
+transformers
+torch
+keybert
+sentence-transformers
+hf_xet
