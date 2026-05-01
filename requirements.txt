@@ -1,8 +1,8 @@
 flask
 flask-cors
 waitress
-transformers
-torch
+transformers==4.30.0
+torch==2.0.1
 keybert
 sentence-transformers
 hf_xet
