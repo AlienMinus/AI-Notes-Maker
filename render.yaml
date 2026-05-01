@@ -3,6 +3,6 @@ services:
     name: notes-maker-api
     env: docker # Specify the environment as Docker
     healthCheck:
-      path: / # Your root endpoint for health checks
+      path: /health # Your explicit endpoint for health checks
     plan: free # Optional: specify your instance type
     autoDeploy: false # Optional: disable auto-deploy on push

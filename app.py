@@ -22,6 +22,11 @@ CORS(app)
 def home():
     return jsonify({"message": "API running 🚀"})
 
+# 🔹 Health Check
+@app.route("/health", methods=["GET"])
+def health_check():
+    return jsonify({"status": "healthy"}), 200
+
 # 🔹 Summarizer
 @app.route("/summarize", methods=["POST"])
 def summarize():
